@@ -20,11 +20,11 @@ S = zeros(n);
 %       number of examples).
 %
 
+% Calculate covatiance matrix
+sigma = (1/m) * X' * X;
 
-
-
-
-
+% Calculate eigene vector
+[U, S, V] = svd(sigma);
 
 % =========================================================================
 

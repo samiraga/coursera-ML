@@ -18,8 +18,11 @@ Z = zeros(size(X, 1), K);
 %                    projection_k = x' * U(:, k);
 %
 
+% Get reduced eigenvectors matrix
+U_reduce = U(:, 1:K);
 
-
+% Calculate projected values
+Z = X * U_reduce; 
 
 % =============================================================
 
